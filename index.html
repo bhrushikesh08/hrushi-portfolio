@@ -319,28 +319,10 @@
         <div class="contact__container container">
           <div class="contact__info" data-aos="fade-up">
             <div class="contact__card">
-              <i class="ri-mail-send-line contact__card-icon"></i>
+              <i class="ri-mail-send-line contact__card-icon" style="color: var(--first-color);"></i>
               <h3 class="contact__card-title">Email</h3>
               <span class="contact__card-data">bheemanapallih@gmail.com</span>
-
-
-              
-
-            <script>
-              function openGmail() {
-                const to = "YOUR-MAIL@gmail.com";
-                const subject = "Hello";
-                  const body = "Hi, I would like to contact you.";
-
-                    window.open(
-                        `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
-                        "_blank"
-                    );
-                }
-                </script>
-
-              <a href="mailto:bheemanapallih@gmail.com" onclick="openGmail()" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.5rem; color: var(--first-color); font-weight: 500;">
-                Send Email <i class="ri-arrow-right-line"></i>
+                <a href="mailto:bheemanapallih@gmail.com"  target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.5rem; color: var(--first-color); font-weight: 500;" >Send Email<i class="ri-arrow-right-line"></i></a>
               </a>
             </div>
             <div class="contact__card">
