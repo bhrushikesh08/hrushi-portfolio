@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio of B. Padma Hrushikesh - Full-Stack Web Developer" />
+    <title>B. Padma Hrushikesh | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="dark-theme">
+    <!-- Loading Screen -->
+    <div id="loader" class="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress">
+      <div class="scroll-progress-bar" id="scroll-bar"></div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">BPH<span>.</span></a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+            <li class="nav__item"><a href="#certificates" class="nav__link">Certificates</a></li>
+            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+          <!-- Close button -->
+          <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme Toggle -->
+          <i class="ri-moon-line change-theme" id="theme-button"></i>
+          <!-- Toggle button -->
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main">
+      <!-- HERO SECTION -->
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__data" data-aos="fade-up">
+            <span class="home__greeting">Hello, I'm</span>
+            <h1 class="home__name">B. Padma <br> Hrushikesh</h1>
+            <h3 class="home__education">
+              <span class="typing-text"></span>
+            </h3>
+            <p class="home__description">
+              Passionate about software development, web technologies, and solving real-world problems. Building practical applications and constantly learning.
+            </p>
+            <div class="home__buttons">
+              <a href="#contact" class="button button--ghost">Let's Talk</a>
+              <a href="#projects" class="button button--primary">View Projects</a>
+            </div>
+          </div>
+          <div class="home__social">
+            <a href="https://linkedin.com" target="_blank" class="home__social-link"><i class="ri-linkedin-fill"></i></a>
+            <a href="https://github.com" target="_blank" class="home__social-link"><i class="ri-github-fill"></i></a>
+            <a href="https://wa.me/919441572613" target="_blank" class="home__social-link"><i class="ri-whatsapp-fill"></i></a>
+            <a href="mailto:bheemanapallih@gmail.com" class="home__social-link"><i class="ri-mail-fill"></i></a>
+          </div>
+        </div>
+        <!-- Particles container -->
+        <div id="particles-js"></div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section class="about section" id="about">
+        <h2 class="section__title" data-aos="fade-in">About Me</h2>
+        <span class="section__subtitle" data-aos="fade-in">My Introduction</span>
+        <div class="about__container container grid">
+          <div class="about__img" data-aos="fade-right">
+            <div class="about__img-wrapper">
+              <img src="assets/profile.jpg" alt="B. Padma Hrushikesh" class="profile-photo" />
+            </div>
+          </div>
+          <div class="about__data" data-aos="fade-left">
+            <p class="about__description">
+              I am a Diploma in Computer Engineering student passionate about software development, web technologies, and solving real-world problems through technology. I enjoy building practical web applications, learning modern technologies, and continuously improving my programming skills. I am currently seeking internship and entry-level software developer opportunities where I can contribute, learn, and grow.
+            </p>
+            <div class="about__info">
+              <div class="about__box">
+                <i class="ri-graduation-cap-line about__icon"></i>
+                <h3 class="about__title">Education</h3>
+                <span class="about__subtitle">Diploma in CE (2027)</span>
+              </div>
+              <div class="about__box">
+                <i class="ri-map-pin-line about__icon"></i>
+                <h3 class="about__title">Location</h3>
+                <span class="about__subtitle">Andhra Pradesh, India</span>
+              </div>
+            </div>
+            <a href="assets/resume.pdf" download="B_Padma_Hrushikesh_Resume.pdf" class="button button--primary">Download Resume <i class="ri-download-line"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="skills section" id="skills">
+        <h2 class="section__title" data-aos="fade-up">My Skills</h2>
+        <span class="section__subtitle" data-aos="fade-up">Technical Expertise</span>
+        <div class="skills__container container grid">
+          <!-- Programming & Backend -->
+          <div class="skills__content" data-aos="fade-right">
+            <h3 class="skills__title"><i class="ri-code-box-line"></i> Programming & Backend</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <div class="skills__name-group">
+                    <span class="skills__name">Java / Python</span>
+                    <span class="skills__percent">80%</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 80%"></span></div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__name-group">
+                    <span class="skills__name">JavaScript / C</span>
+                    <span class="skills__percent">75%</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 75%"></span></div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__name-group">
+                    <span class="skills__name">Node.js / Express</span>
+                    <span class="skills__percent">75%</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 75%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Frontend & Database -->
+          <div class="skills__content" data-aos="fade-left">
+            <h3 class="skills__title"><i class="ri-layout-masonry-line"></i> Frontend & Tools</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <div class="skills__name-group">
+                    <span class="skills__name">HTML5 / CSS3</span>
+                    <span class="skills__percent">90%</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 90%"></span></div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__name-group">
+                    <span class="skills__name">Firebase / MySQL</span>
+                    <span class="skills__percent">70%</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 70%"></span></div>
+                </div>
+                <div class="skills__data">
+                  <div class="skills__name-group">
+                    <span class="skills__name">Git / GitHub</span>
+                    <span class="skills__percent">85%</span>
+                  </div>
+                  <div class="skills__bar"><span class="skills__percentage" style="width: 85%"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION TIMELINE -->
+      <section class="education section" id="education">
+        <h2 class="section__title" data-aos="fade-in">Education & Journey</h2>
+        <span class="section__subtitle" data-aos="fade-in">My Academic Path</span>
+        <div class="education__container container">
+          <div class="timeline">
+            <div class="timeline__item" data-aos="fade-up">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3 class="timeline__title">Diploma in Computer Engineering</h3>
+                <span class="timeline__subtitle">Dr. YC James Yen Government Polytechnic, Kuppam</span>
+                <span class="timeline__date"><i class="ri-calendar-line"></i> 2024 - 2027 | Score: 81.7%</span>
+              </div>
+            </div>
+            <div class="timeline__item" data-aos="fade-up" data-aos-delay="100">
+              <div class="timeline__dot"></div>
+              <div class="timeline__content">
+                <h3 class="timeline__title">Secondary School Certificate (SSC)</h3>
+                <span class="timeline__subtitle">Vani E/M High School, Rayadurg</span>
+                <span class="timeline__date"><i class="ri-calendar-line"></i> 2023 - 2024 | Score: 93.6%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section class="projects section" id="projects">
+        <h2 class="section__title" data-aos="fade-up">Featured Projects</h2>
+        <span class="section__subtitle" data-aos="fade-up">What I've Built</span>
+        <div class="projects__container container grid">
+          <!-- Project 1 -->
+          <article class="projects__card featured" data-aos="fade-up">
+            <div class="projects__image">
+              <img src="assets/Project/Project-1.png" alt="Project 1" class="projects__img">
+              <span class="projects__badge">Featured</span>
+            </div>
+            <div class="projects__content">
+              <h3 class="projects__title">Student Powered Study Learner</h3>
+              <p class="projects__description">
+                An AI-powered web app helping students track study time, get reminders, generate timetables, and monitor budgets.
+              </p>
+              <ul class="projects__tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Firebase</li>
+              </ul>
+              <a href="#" class="button button--ghost button--small">View Live <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </article>
+          <!-- Project 2 -->
+          <article class="projects__card" data-aos="fade-up" data-aos-delay="200">
+            <div class="projects__image">
+              <img src="assets/Project/Project-2.png" alt="Project 2" class="projects__img">
+            </div>
+            <div class="projects__content">
+              <h3 class="projects__title">Personal Portfolio Website</h3>
+              <p class="projects__description">
+                A modern responsive portfolio website showcasing my skills, projects, achievements, and contact information.
+              </p>
+              <ul class="projects__tech">
+                <li>HTML/CSS</li>
+                <li>JS</li>
+                <li>GSAP</li>
+              </ul>
+              <a href="#" class="button button--ghost button--small">View Live <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ACHIEVEMENTS SECTION -->
+      <section class="achievements section" id="achievements">
+        <h2 class="section__title" data-aos="fade-up">Achievements</h2>
+        <span class="section__subtitle" data-aos="fade-up">Milestones</span>
+        <div class="achievements__container container grid">
+          <div class="achievements__card" data-aos="zoom-in">
+            <i class="ri-medal-line achievements__icon"></i>
+            <h3 class="achievements__title">Ball Badminton 1st Prize</h3>
+            <p>1st Place with participation certificate in Diploma 4th Sem (2025).</p>
+          </div>
+          <div class="achievements__card" data-aos="zoom-in" data-aos-delay="100">
+            <i class="ri-trophy-line achievements__icon"></i>
+            <h3 class="achievements__title">School Shuttle Gold Medalist</h3>
+            <p>Won Gold Medal & participation certificate in 8th, 9th, and 10th grade.</p>
+          </div>
+          <div class="achievements__card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="ri-award-line achievements__icon"></i>
+            <h3 class="achievements__title">IBM Internship</h3>
+            <p>Training participant gaining industry tech knowledge.</p>
+          </div>
+          <div class="achievements__card" data-aos="zoom-in" data-aos-delay="300">
+            <i class="ri-user-star-line achievements__icon"></i>
+            <h3 class="achievements__title">Class Representative</h3>
+            <p>Elected Class Representative (CR) showing leadership & teamwork.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CERTIFICATES SECTION -->
+      <section class="certificates section" id="certificates">
+        <h2 class="section__title" data-aos="fade-up">Certificates</h2>
+        <span class="section__subtitle" data-aos="fade-up">Recognitions & Learning</span>
+        <div class="certificates__container container grid">
+          
+          <a href="certificates/ibm-internship-certificate.pdf" target="_blank" class="certificates__card" data-aos="zoom-in" data-aos-delay="200">
+            <i class="ri-briefcase-4-line certificates__icon"></i>
+            <h3 class="certificates__title">IBM SkillsBuild Internship</h3>
+            <p class="certificates__description">Participated in industry-oriented training that strengthened my technical and professional skills.</p>
+          </a>
+        </div>
+      </section>
+
+      <!-- RESUME SECTION -->
+      <section class="resume section" id="resume">
+        <div class="resume__container container" data-aos="fade-up">
+          <div class="resume__content glass-panel">
+            <i class="ri-file-text-line resume__icon"></i>
+            <h2 class="resume__title">Get Full Resume</h2>
+            <p class="resume__description">Download my complete resume to learn more about my background, skills, and experience.</p>
+            <a href="assets/resume.pdf" download="B_Padma_Hrushikesh_Resume.pdf" class="button button--primary glow-effect">Download PDF <i class="ri-download-line"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT SECTION -->
+      <section class="contact section" id="contact">
+        <h2 class="section__title" data-aos="fade-up">Get in Touch</h2>
+        <span class="section__subtitle" data-aos="fade-up">Contact Me</span>
+        <div class="contact__container container">
+          <div class="contact__info" data-aos="fade-up">
+            <div class="contact__card">
+              <i class="ri-mail-send-line contact__card-icon"></i>
+              <h3 class="contact__card-title">Email</h3>
+              <span class="contact__card-data">bheemanapallih@gmail.com</span>
+
+
+              
+
+            <script>
+              function openGmail() {
+                const to = "YOUR-MAIL@gmail.com";
+                const subject = "Hello";
+                  const body = "Hi, I would like to contact you.";
+
+                    window.open(
+                        `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(to)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`,
+                        "_blank"
+                    );
+                }
+                </script>
+
+              <a href="mailto:bheemanapallih@gmail.com" onclick="openGmail()" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.5rem; color: var(--first-color); font-weight: 500;">
+                Send Email <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class="ri-whatsapp-line contact__card-icon" style="color: #25D366;"></i>
+              <h3 class="contact__card-title">Phone & WhatsApp</h3>
+              <span class="contact__card-data">+91 9441572613</span>
+              <a href="https://wa.me/919441572613?text=Hi%20Hrushikesh,%20I%20saw%20your%20portfolio!%20Hi,%20I%20would%20like%20to%20contact%20you." target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.5rem; color: #25D366; font-weight: 500;">
+                Chat on WhatsApp <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+            <div class="contact__card">
+              <i class="ri-map-pin-user-line contact__card-icon"></i>
+              <h3 class="contact__card-title">Location</h3>
+              <span class="contact__card-data">Rayadurg, Andhra Pradesh</span>
+              <a href="https://www.google.com/maps/@14.7000488,76.8243944,13z?entry=ttu&g_ep=EgoyMDI2MDgxMi4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="contact__button" style="display: inline-flex; align-items: center; gap: 0.3rem; margin-top: 0.5rem; color: var(--first-color); font-weight: 500;">
+                Open For Location <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <h1 class="footer__title">B. Padma Hrushikesh</h1>
+        <ul class="footer__list">
+          <li><a href="#about" class="footer__link">About</a></li>
+          <li><a href="#projects" class="footer__link">Projects</a></li>
+          <li><a href="#skills" class="footer__link">Skills</a></li>
+        </ul>
+        <div class="footer__social">
+          <a href="https://linkedin.com" target="_blank" class="footer__social-link"><i class="ri-linkedin-fill"></i></a>
+          <a href="https://github.com/bheemanapallih" target="_blank" class="footer__social-link"><i class="ri-github-fill"></i></a>
+          <a href="https://wa.me/919441572613" target="_blank" class="footer__social-link"><i class="ri-whatsapp-fill"></i></a>
+          <a href="mailto:bheemanapallih@gmail.com" class="footer__social-link"><i class="ri-mail-fill"></i></a>
+        </div>
+        <span class="footer__copy">
+          &#169; <span id="current-year"></span> Designed & Developed by B. Padma Hrushikesh. All rigths reserved
+        </span>
+      </div>
+    </footer>
+
+    <!-- SCROLL UP -->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="ri-arrow-up-line"></i>
+    </a>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
